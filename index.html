@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEX SOPHIA</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio id="typeSound" src="Assets/Sounds/Typing Sound Effect no copyright.wav" preload="auto"></audio>
+
+    <div class="container">
+      <img src="" alt="IMAGO" id="enigmaImage" class="enigma-image" />
+
+      <div class="prompt">
+        <p id="enigmaTexto">“”<br />Toda verdade há de ser colocada em uma caixa:</p>
+      </div>
+
+      <div class="input-group">
+        <input
+          type="text"
+          id="answer"
+          placeholder="Ilumine-me"
+          autocomplete="off"
+        />
+        <button class="btn-two" id="submitBut" onclick="submitAnswer()">
+          Mittere
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <p class="footer-note">No princípio, era o verbo © IK1.</p>
+    </footer>
+
+    <script>
+      let enigmas = [];
+      let faseAtual = parseInt(localStorage.getItem("faseAtual")) || 0;
+
+      const img = document.getElementById("enigmaImage");
+      const texto = document.getElementById("enigmaTexto");
+      const input = document.getElementById("answer");
+
+      const typeSound = document.getElementById("typeSound");
+      input.addEventListener("keydown", (e) => {
+        if (e.key.length === 1) { // Evita tocar em teclas como Shift, Enter etc.
+          typeSound.currentTime = 0; // Recomeça o som
+          typeSound.play();
+        }
+
+        if (e.key === "Enter") {
+          submitAnswer();
+        }
+      });
+
+      async function carregarFases() {
+        const response = await fetch("hashes.json");
+        const data = await response.json();
+        enigmas = data.enigmas;
+
+        if (faseAtual >= enigmas.length) {
+          texto.innerText = "E então, Sophia, uniu-se as sementes que dariam frutos. E as que se rebelaram, usaram do seu livre-arbítrio para continuar no mundo material até que sua alma se canse.";
+          img.style.display = "none";
+          document.querySelector(".input-group").style.display = "none";
+          return;
+        }
+
+        const fase = enigmas[faseAtual];
+        img.src = fase.imagem || "";
+        img.style.display = fase.imagem ? "block" : "none";
+        texto.innerText = fase.texto;
+        input.value = "";
+      }
+
+      async function submitAnswer() {
+        const answer = input.value
+          .normalize("NFD")                         // Separa acentos das letras
+          .replace(/[\u0300-\u036f]/g, "")         // Remove os acentos
+          .replace(/[^a-z0-9]/gi, "")              // Remove tudo que não for letra ou número
+          .toLowerCase();                          
+        const encoder = new TextEncoder();
+        const data = encoder.encode(answer);
+        const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
+        console.log(answer);
+
+        const expectedHash = enigmas[faseAtual].hash;
+
+        if (hashHex === expectedHash) {
+          alert("Certo!");
+          faseAtual++;
+          localStorage.setItem("faseAtual", faseAtual);
+          carregarFases();
+        } else {
+          alert("E conhecerão a verdade, e a verdade os libertará. Tente novamente.");
+        }
+      }
+
+      carregarFases();
+    </script>
+  </body>
+</html>
