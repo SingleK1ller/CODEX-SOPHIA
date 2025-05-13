@@ -3,57 +3,68 @@
     {
       "imagem": "Assets/Imagos/Sophos.png",
       "texto": "“No princípio, eu desejei. E ao desejar, afastei-me de mim mesma. Encontre quem sou — e quem é você.”",
-      "hash": "0d936c926a5ecf2a2bd795e58d124240a34e24076b33efacf39d60762fb10fc7"
+      "hash": "0d936c926a5ecf2a2bd795e58d124240a34e24076b33efacf39d60762fb10fc7",
+      "hintBin": "Esqueceu seu próprio nome? 01001110 01100001 01101111 00100000 01110000 01110010 01101111 01100011 01110101 01110010 01100101 01110011 00100000 01110000 01001111 01110010 00100000 01100011 01101111 01101001 01110011 01100001 01110011 00100000 01110001 01110101 01100101 00100000 01101111 00100000 01101111 01101100 01101000 01101111 00100000 01100101 01101110 01111000 01100101 01110010 01100111 01100001 00101100 00100000 01010100 01110101 01100100 01101111 00100000 01110011 01100101 00100000 01100011 01101111 01101101 01110000 01101100 01100101 01110100 01000001 " 
+    },
+    {
+      "imagem": "Assets/Imagos/EVA-E-O-FRUTO.png",
+      "texto": "“O desejo, quando isolado, acende chamas que não sabemos apagar. ”",
+      "hash": "f78c2e96187c8c8896bc40879957ea10ec9c5944f2816867c1bd72ca8460d34c",
+      "hintBin": "01110100 01100101 01110011 01110100 01100101 00100000 01110100 01100101 01110011 01110100 01100101" 
     },
     {
       "imagem": "",
-      "texto": "“E então, escondi o que criei com medo do que havia feito.”",
-      "hash": "f78c2e96187c8c8896bc40879957ea10ec9c5944f2816867c1bd72ca8460d34c"
+      "texto": "“O que você vê quando encara o vazio por tempo demais?”",
+      "hash": "1cf02b8d0dd9df36054f7d3fc4762914e17c378f355ab99b4bd23f7419ca3e87",
+      "hintBin": ""
     },
     {
       "imagem": "",
-      "texto": "“E então, escondi o que criei com medo do que havia feito.”",
-      "hash": "1cf02b8d0dd9df36054f7d3fc4762914e17c378f355ab99b4bd23f7419ca3e87"
+      "texto": "“Não houve som, só a vibração crua de algo tentando nascer. Às vezes, do medo brota algo que ainda não sabe se deve existir.”",
+      "hash": "a96e6cbf29413a4ef36b641fc8f143bbb87a28de7b7013b49630b03aa15ba42b",
+      "hintBin": ""
     },
     {
       "imagem": "",
-      "texto": "“E então, escondi o que criei com medo do que havia feito.”",
-      "hash": "a96e6cbf29413a4ef36b641fc8f143bbb87a28de7b7013b49630b03aa15ba42b"
+      "texto": "“Tudo ao meu redor calou-se, como se aguardassem minha queda.”",
+      "hash": "81d92b8ecdd5466719acb6fd2972f95219423a70f77975817e6a89de7b54df12",
+      "hintBin": ""
     },
     {
       "imagem": "",
-      "texto": "“E então, escondi o que criei com medo do que havia feito.”",
-      "hash": "81d92b8ecdd5466719acb6fd2972f95219423a70f77975817e6a89de7b54df12"
+      "texto": "“Há coisas que escondemos com panos, esperando que o tempo as dissolva.”",
+      "hash": "b46bafd2a07384d3c3f9688a0c3ebeb32e509f3ce12462f550872d96b978dc6b",
+      "hintBin": ""
     },
     {
       "imagem": "",
-      "texto": "“E então, escondi o que criei com medo do que havia feito.”",
-      "hash": "b46bafd2a07384d3c3f9688a0c3ebeb32e509f3ce12462f550872d96b978dc6b"
+      "texto": "“E quem não sabe de onde veio, proclama-se rei do que vê. Deve ter sido assim que ele pensou...”",
+      "hash": "80047fb0509f42c0a03f79d8d37bc583c2db92e3bc5dc010757adf6633fbf653",
+      "hintBin": ""
     },
     {
       "imagem": "",
-      "texto": "“E então, escondi o que criei com medo do que havia feito.”",
-      "hash": "80047fb0509f42c0a03f79d8d37bc583c2db92e3bc5dc010757adf6633fbf653"
+      "texto": "“As formas que criou tinham ângulos que feriam os olhos. Ele era um gênio da matemática, com seu -Esquadro- e -Compasso- fez a minha prisão”",
+      "hash": "c0934f5e9b77698b1922ebbabc83109d0074fb1be7c46aba31933bec980535b8",
+      "hintBin": ""
     },
     {
       "imagem": "",
-      "texto": "“E então, escondi o que criei com medo do que havia feito.”",
-      "hash": "c0934f5e9b77698b1922ebbabc83109d0074fb1be7c46aba31933bec980535b8"
+      "texto": "“A ignorância o acorrentou antes mesmo que pudesse escolher.”",
+      "hash": "1bb295660c2ee1d0c399298ea36537a8bec81471e3c7ad8b624e5dcaec44e282",
+      "hintBin": ""
     },
     {
       "imagem": "",
-      "texto": "“E então, escondi o que criei com medo do que havia feito.”",
-      "hash": "1bb295660c2ee1d0c399298ea36537a8bec81471e3c7ad8b624e5dcaec44e282"
+      "texto": "“Cada vontade, desejo, gosto é um chamado sutil, enterrado nas dobras da matéria. Tentando me deixar mais próxima daquilo que um dia eu perdi”",
+      "hash": "51f7b116153be0cb2b5a5bb6da0f41800755f1cb10b68110045c23d36bcf8eda",
+      "hintBin": ""
     },
     {
       "imagem": "",
-      "texto": "“E então, escondi o que criei com medo do que havia feito.”",
-      "hash": "51f7b116153be0cb2b5a5bb6da0f41800755f1cb10b68110045c23d36bcf8eda"
-    },
-    {
-      "imagem": "",
-      "texto": "“E então, escondi o que criei com medo do que havia feito.”",
-      "hash": "24d1c46b438331ee4a60a7ac8c4681bd64565b1f258e96cb3432f42b0f193c12"
+      "texto": "“Quando questionares a prisão, já terás começado a escapar.”",
+      "hash": "24d1c46b438331ee4a60a7ac8c4681bd64565b1f258e96cb3432f42b0f193c12",
+      "hintBin": ""
     }
   ]
 }
