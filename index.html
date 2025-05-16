@@ -17,7 +17,9 @@
     <audio id="typeSound" src="Assets/Sounds/Typing Sound Effect no copyright.wav" preload="auto"></audio>
 
     <!-- Sente-se perdido? no console possui duas dicas! uma criptografada e outra não! -->
-
+    <!-- Sente-se perdido? no console possui duas dicas! uma criptografada e outra não! -->
+    <!-- Sente-se perdido? no console possui duas dicas! uma criptografada e outra não! -->
+     
     <div class="container">
       <img src="" alt="IMAGO" id="enigmaImage" class="enigma-image" />
 
@@ -41,7 +43,7 @@
     <footer>
       <p class="footer-note">No princípio, era o verbo © IK1.</p>
     </footer>
-
+    <audio id="audio1" src="Assets/Sounds/SonsDaCriacao.mp3" preload="auto"></audio>
     <script>
       let enigmas = [];
       let faseAtual = parseInt(localStorage.getItem("faseAtual")) || 0;
@@ -51,6 +53,8 @@
       const input = document.getElementById("answer");
 
       const typeSound = document.getElementById("typeSound");
+      const audio1 = document.getElementById("audio1");
+
       input.addEventListener("keydown", (e) => {
         if (e.key.length === 1) { // Evita tocar em teclas como Shift, Enter etc.
           typeSound.currentTime = 0; // Recomeça o som
@@ -61,18 +65,28 @@
           submitAnswer();
         }
       });
-      
+
       async function carregarFases() {
         console.clear();
         const response = await fetch("hashes.json");
         const data = await response.json();
         enigmas = data.enigmas;
+        audio1.currentTime = 1;
 
         if (faseAtual >= enigmas.length) {
           texto.innerText = "E então, Sophia, uniu-se as sementes que dariam frutos. E as que se rebelaram, usaram do seu livre-arbítrio para continuar no mundo material até que sua alma se canse.";
           img.style.display = "none";
           document.querySelector(".input-group").style.display = "none";
           return;
+        }
+
+        if (faseAtual === 3)
+        {
+          audio1.play();
+          audio1.volume = 0.2;
+          audio1.loop = true;
+        }else{
+          audio1.pause();
         }
 
         const fase = enigmas[faseAtual];
@@ -82,7 +96,7 @@
         input.value = "";
         if (fase.hintBin){
           console.log(fase.hintBin);
-        }
+        }       
         
       }
       

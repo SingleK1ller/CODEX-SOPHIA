@@ -8,21 +8,21 @@
     },
     {
       "imagem": "Assets/Imagos/EVA-E-O-FRUTO.png",
-      "texto": "“O desejo, quando isolado, acende chamas que não sabemos apagar. ”",
+      "texto": "“O desejo, quando isolado, acende chamas que não sabemos apagar.”",
       "hash": "f78c2e96187c8c8896bc40879957ea10ec9c5944f2816867c1bd72ca8460d34c",
-      "hintBin": "01110100 01100101 01110011 01110100 01100101 00100000 01110100 01100101 01110011 01110100 01100101" 
+      "hintBin": "O que eu fiz? Esta é a primeira vez que faço isso? 01010010 01100101 01100011 01101111 01101101 01100101 01101110 01100100 01101111 00100000 01110000 01110010 01101111 01100011 01110101 01110010 01100001 01110010 00100000 01110101 01101101 01100001 00100000 00100111 01100011 01100001 01101100 01100011 01110101 01101100 01100001 01100100 01101111 01110010 01100001 00100111 " 
     },
     {
-      "imagem": "",
+      "imagem": "Assets/Imagos/Abismo.png",
       "texto": "“O que você vê quando encara o vazio por tempo demais?”",
       "hash": "1cf02b8d0dd9df36054f7d3fc4762914e17c378f355ab99b4bd23f7419ca3e87",
-      "hintBin": ""
+      "hintBin": "Ele me olhou também. 01001111 00100000 01110001 01110101 01100101 00100000 01001110 01101001 01100101 01110100 01111010 01110011 01100011 01101000 01100101 00100000 01100110 01100001 01101100 01100001 01110110 01100001 00111111 "
     },
     {
-      "imagem": "",
+      "imagem": "Assets/Imagos/SomDaQueda.png",
       "texto": "“Não houve som, só a vibração crua de algo tentando nascer. Às vezes, do medo brota algo que ainda não sabe se deve existir.”",
       "hash": "a96e6cbf29413a4ef36b641fc8f143bbb87a28de7b7013b49630b03aa15ba42b",
-      "hintBin": ""
+      "hintBin": "Não há ajuda simples dessa vez. 01000101 01101001 00101100 00100000 01101101 01100101 01110101 00100000 01000000 00100000 01101110 01101111 00100000 01010100 01110111 01101001 01110100 01110100 01100101 01110010 00100000 11101001 00100000 01101001 01001011 00110001 01011111 01100111 "
     },
     {
       "imagem": "",
