@@ -109,6 +109,12 @@ input[type="text"] {
     transform: rotate(45deg);
     background-color: rgba(255,255,255,0);
   }
+  #sec
+  {
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 0, 0, 0.1);
+
+  }
 
 @media (max-width: 600px) {
     .container {

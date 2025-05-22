@@ -19,7 +19,7 @@
     <!-- Sente-se perdido? no console possui duas dicas! uma criptografada e outra não! -->
     <!-- Sente-se perdido? no console possui duas dicas! uma criptografada e outra não! -->
     <!-- Sente-se perdido? no console possui duas dicas! uma criptografada e outra não! -->
-     
+     <p id="sec"></p>
     <div class="container">
       <img src="" alt="IMAGO" id="enigmaImage" class="enigma-image" />
 
@@ -41,7 +41,7 @@
     </div>
 
     <footer>
-      <p class="footer-note">No princípio, era o verbo © IK1.</p>
+      <p class="footer-note" id="footer-note">No princípio, era o verbo © IK1.</p>
     </footer>
     <audio id="audio1" src="Assets/Sounds/SonsDaCriacao.mp3" preload="auto"></audio>
     <script>
@@ -51,6 +51,7 @@
       const img = document.getElementById("enigmaImage");
       const texto = document.getElementById("enigmaTexto");
       const input = document.getElementById("answer");
+      const sec = document.getElementById("sec");
 
       const typeSound = document.getElementById("typeSound");
       const audio1 = document.getElementById("audio1");
@@ -89,6 +90,7 @@
           audio1.pause();
         }
 
+        
         const fase = enigmas[faseAtual];
         img.src = fase.imagem || "";
         img.style.display = fase.imagem ? "block" : "none";
@@ -97,6 +99,11 @@
         if (fase.hintBin){
           console.log(fase.hintBin);
         }       
+        if (faseAtual == 8)
+        {
+          sec.innerText= fase.othertext;
+        }
+
         
       }
       
